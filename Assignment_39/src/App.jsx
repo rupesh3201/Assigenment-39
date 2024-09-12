@@ -27,6 +27,7 @@ const Content = () => {
   return (
     <section className="content-section">
       This is the Content Section
+     
     </section>
   );
 };
