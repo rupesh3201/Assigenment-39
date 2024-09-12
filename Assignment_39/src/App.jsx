@@ -1,15 +1,17 @@
-import React from 'react'
+import React from 'react';
+import './App.css'; // For external styles
+ // Create this file for external styles
 
 function App() {
   return (
     <div>
-    <Header />
-    <Content />
-    <Footer />
-  </div>
-
-  )
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  );
 }
+
 const Header = () => {
   // Inline styling
   const headerStyle = {
@@ -21,4 +23,16 @@ const Header = () => {
   return <header style={headerStyle}>This is the Header</header>;
 };
 
-export default App
+const Content = () => {
+  return (
+    <section className="content-section">
+      This is the Content Section
+    </section>
+  );
+};
+
+const Footer = () => {
+  return <footer className="footer">This is the Footer</footer>;
+};
+
+export default App;
